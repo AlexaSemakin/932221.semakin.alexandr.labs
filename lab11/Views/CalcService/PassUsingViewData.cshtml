@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "PassUsingViewData";
+    Layout = "_Layout";
+
+    int a = (int)ViewData["A"]!;
+    int b = (int)ViewData["B"]!;
+    int add  = (int)ViewData["Add"]!;
+    int sub  = (int)ViewData["Sub"]!;
+    int mult = (int)ViewData["Mult"]!;
+    string div = (string)ViewData["Div"]!;
+}
+<h2>PassUsingViewData</h2>
+
+<p><strong>Rand Value First :</strong> @a</p>
+<p><strong>Rand Value Second :</strong> @b</p>
+
+<p><strong>Add :</strong><br />@a + @b = @add</p>
+<p><strong>Sub :</strong><br />@a - @b = @sub</p>
+<p><strong>Mult :</strong><br />@a * @b = @mult</p>
+<p><strong>Div :</strong><br />@a / @b = @div</p>

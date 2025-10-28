@@ -1,0 +1,14 @@
+@model Lab11.Models.CalcViewModel
+@{
+    ViewData["Title"] = "PassUsingModel";
+    Layout = "_Layout";
+}
+<h2>PassUsingModel</h2>
+
+<p><strong>Rand Value First :</strong> @Model.A</p>
+<p><strong>Rand Value Second :</strong> @Model.B</p>
+
+<p><strong>Add :</strong><br />@Model.A + @Model.B = @Model.Add</p>
+<p><strong>Sub :</strong><br />@Model.A - @Model.B = @Model.Sub</p>
+<p><strong>Mult :</strong><br />@Model.A * @Model.B = @Model.Mult</p>
+<p><strong>Div :</strong><br />@Model.A / @Model.B = @Model.Div</p>

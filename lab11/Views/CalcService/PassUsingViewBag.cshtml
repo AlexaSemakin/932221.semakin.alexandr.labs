@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "PassUsingViewBag";
+    Layout = "_Layout";
+
+    int a = (int)ViewBag.A;
+    int b = (int)ViewBag.B;
+    int add  = (int)ViewBag.Add;
+    int sub  = (int)ViewBag.Sub;
+    int mult = (int)ViewBag.Mult;
+    string div = (string)ViewBag.Div;
+}
+<h2>PassUsingViewBag</h2>
+
+<p><strong>Rand Value First :</strong> @a</p>
+<p><strong>Rand Value Second :</strong> @b</p>
+
+<p><strong>Add :</strong><br />@a + @b = @add</p>
+<p><strong>Sub :</strong><br />@a - @b = @sub</p>
+<p><strong>Mult :</strong><br />@a * @b = @mult</p>
+<p><strong>Div :</strong><br />@a / @b = @div</p>

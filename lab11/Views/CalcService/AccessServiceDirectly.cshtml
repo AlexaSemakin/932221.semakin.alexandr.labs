@@ -1,0 +1,17 @@
+@inject Lab11.Services.ICalcService Calc
+@{
+    ViewData["Title"] = "AccessServiceDirectly";
+    Layout = "_Layout";
+
+    int a = (int)ViewBag.A;
+    int b = (int)ViewBag.B;
+}
+<h2>AccessServiceDirectly</h2>
+
+<p><strong>Rand Value First :</strong> @a</p>
+<p><strong>Rand Value Second :</strong> @b</p>
+
+<p><strong>Add :</strong><br />@a + @b = @Calc.Add(a, b)</p>
+<p><strong>Sub :</strong><br />@a - @b = @Calc.Sub(a, b)</p>
+<p><strong>Mult :</strong><br />@a * @b = @Calc.Mult(a, b)</p>
+<p><strong>Div :</strong><br />@a / @b = @Calc.Div(a, b)</p>
