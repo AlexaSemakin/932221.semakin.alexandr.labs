@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="calc">
+    <div id="display" class="calc-display">
+      <span id="disp-left" class="disp-left"></span><span id="disp-right" class="disp-right">0</span>
+    </div>
+
+    <div class="calc-grid">
+      <button data-v="7">7</button>
+      <button data-v="8">8</button>
+      <button data-v="9">9</button>
+      <button data-op="/">/</button>
+      <button data-act="clear">C</button>
+
+      <button data-v="4">4</button>
+      <button data-v="5">5</button>
+      <button data-v="6">6</button>
+      <button data-op="*">*</button>
+      <button data-act="back"><-</button>
+
+      <button data-v="1">1</button>
+      <button data-v="2">2</button>
+      <button data-v="3">3</button>
+      <button data-op="-">-</button>
+      <button class="eq" data-act="eq">=</button>
+
+      <button class="zero" data-v="0">0</button>
+      <button data-v=".">.</button>
+      <button data-op="+">+</button>
+    </div>
+  </div>
+  <script src="logic.js"></script>
+</body>
+</html>
