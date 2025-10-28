@@ -1,0 +1,36 @@
+ * { box-sizing: border-box; }
+    body {
+      margin: 0;                   
+      font-family: "Times New Roman", Times, serif;
+      font-size: 15px;
+      line-height: 1.4;
+      background: white;           
+      color: white;               
+    }
+
+    
+    .content {
+      width: 100%;               
+      max-width: 600px;          
+      margin: 8px auto 0;         
+      padding: 2px;
+      background: blue;           
+      overflow: hidden;
+    }
+
+
+    .header, .footer { display: none; }   
+    .content h1 { font-size: 1.2em; margin: 0 0 8px 0; }  
+
+    
+    .demo-list { visibility: hidden; height: 0; overflow: hidden; margin: 0; padding: 0; }
+    .demo-list > li { list-style: none; }
+    .demo-list > li:first-child { color: aquamarine; }
+    .demo-list > li:nth-child(2) { color: limegreen; }
+    .demo-list > li:last-child { color: blueviolet; }
+
+  
+    .floating { float: left; display: none; } 
+    @media (max-width: 600px) { 
+      .content { margin-top: 6px; }
+    }

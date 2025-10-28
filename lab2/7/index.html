@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Task 2.7 — static / relative / absolute / fixed</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <div class="box-static">
+    <span class="label">It's a static div!</span>
+  </div>
+
+  <div class="box-rel-1">
+    <span class="label">It's a relative div!</span>
+  </div>
+
+  <div class="box-rel-2">
+    <span class="label">It's a relative div!</span>
+  </div>
+
+  <div class="box-rel-big">
+    <span class="label">It's a relative div!</span>
+    <div class="box-abs-inside">
+      <span class="label">It's an absolute div with relative parent!</span>
+    </div>
+  </div>
+
+  <div class="box-fixed">
+    <span class="label">It's a fixed div!</span>
+  </div>
+
+  <footer class="footer">footer</footer>
+  <section style="display:none"><h1>h1</h1><h2>h2</h2><p>p</p><ul><li>a</li><li>b</li></ul></section>
+  <aside style="display:none">aside</aside>
+  <a href="#" style="display:none">link</a>
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" width="1" height="1" alt="." style="display:none">
+  <span style="display:none"><i>i</i><b>b</b><u>u</u></span>
+</body>
+</html>

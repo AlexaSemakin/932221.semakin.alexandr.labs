@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 10px;
+  font: 16px/1.4 Arial, sans-serif;
+  
+}
+
+.container {
+    display: flex;
+    border: 3px solid green;
+    flex-direction: row;
+}
+
+.text {
+  background: cyan;
+  padding: 10px;
+  flex: 1 1 60%;          /* текст занимает больше места */
+}
+
+img {
+  display: block;
+  height: 300px;
+  width: 300px;
+}
+

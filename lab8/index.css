@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    margin: 0;
+    font: 14px/1.4 Arial, Helvetica, sans-serif
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 220px 200px auto;
+    align-items: center;
+}
+
+.row input {
+    width: 100%;
+    padding: 2px 4px
+}
+
+.actions {
+    display: inline-grid;
+    grid-auto-flow: column;
+    justify-content: start;
+}
+
+.actions button {
+    width: 22px;
+    height: 22px
+}
+
+.out {
+    margin: 6px;
+    color: #333
+}

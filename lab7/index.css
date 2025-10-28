@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0
+}
+
+body {
+    font: 16px/1.4 Arial, Helvetica, sans-serif;
+    background: #fff
+}
+
+.panel {
+    padding: 10px
+}
+
+.btn {
+    margin-right: 6px;
+    cursor: pointer
+}
+
+.stage {
+    position: relative;
+    min-height: calc(100vh - 48px);
+    overflow: hidden
+}
+
+.shape {
+    position: absolute;
+    opacity: .9;
+    cursor: pointer
+}
+
+.shape.square {
+    background: #ff1f1f;
+    border: 2px solid #111
+}
+
+.shape.circle {
+    background: #178a19;
+    border: 2px solid #111;
+    border-radius: 50%
+}
+
+.shape.triangle {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 140px solid #1b1bf4;
+    opacity: .8
+}
+
+
+.shape.square.selected {
+    background: #ffe500
+}
+
+.shape.circle.selected {
+    background: #ffe500
+}
+
+.shape.triangle.selected {
+    border-bottom-color: #ffe500
+}

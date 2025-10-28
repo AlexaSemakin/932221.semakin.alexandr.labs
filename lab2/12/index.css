@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 16px/1.4 Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  background: cyan;
+  border: 1px solid #3d8b8b;
+  overflow: hidden; /* чтобы float не вылезал */
+}
+
+/* Меню слева */
+.menu {
+  float: left;
+  width: 300px;
+  background: #f1d5b8;
+}
+
+/* Контент справа */
+.content {
+  background: #e5e1dc;
+  border: 1px solid #8aa78a;
+  padding: 10px;
+  margin-left: 305px;
+  margin-right: 5px;
+}
+
+/* ----- Адаптив ----- */
+@media (max-width: 700px) {
+  .menu {
+    float: none;       /* убираем обтекание */
+    width: 170px;       /* ширина 100% */
+   padding-top: 1px;
+   padding-bottom: 1px;
+    
+  }
+
+  .content {
+    margin-left: 0;   
+    width: 600px; /* убираем отступ */
+  }
+}

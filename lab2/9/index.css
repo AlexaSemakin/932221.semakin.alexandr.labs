@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #eee;
+  font: 16px/1.4 Arial, Helvetica, sans-serif;
+}
+
+.box {
+  width: 700px;            /* фиксированная ширина */
+  background: blue;
+  color: white;
+  margin: 20px auto;       /* центрирование */
+  padding: 10px;
+  overflow: hidden;        /* чтобы обтекание не ломало контейнер */
+}
+
+.pic {
+  float: right;            /* обтекание справа */
+  width: 300px;
+  height: auto;
+  margin: 0 0 10px 10px;   /* отступ от текста */
+  border: 1px solid rgba(255,255,255,0.5);
+  background: #fff;
+}
+
+p {
+  margin: 0;
+  text-align: justify;
+}
