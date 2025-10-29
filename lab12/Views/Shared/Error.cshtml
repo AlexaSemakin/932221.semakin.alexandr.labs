@@ -1,0 +1,9 @@
+@{
+    ViewData["Title"] = "Ошибка";
+}
+<h1 class="text-danger">Произошла ошибка</h1>
+<p>Во время обработки вашего запроса возникла ошибка.</p>
+@if (ViewData["RequestId"] != null)
+{
+    <p><strong>Request ID:</strong> <code>@ViewData["RequestId"]</code></p>
+}

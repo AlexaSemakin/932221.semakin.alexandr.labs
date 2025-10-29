@@ -1,0 +1,16 @@
+@model lab12.Models.CalcModel
+@{
+    ViewData["Title"] = "ModelBindingInSeparateModel";
+}
+<h2>ModelBindingInSeparateModel</h2>
+<form method="post">
+    <input asp-for="First" class="form-control mb-2" />
+    <select asp-for="Operation" class="form-control mb-2" style="max-width:6rem">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input asp-for="Second" class="form-control mb-2" />
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

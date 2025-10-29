@@ -1,0 +1,22 @@
+@{
+    ViewData["Title"] = "Result";
+}
+<h2>Result</h2>
+
+@if (ViewBag.Error != null)
+{
+    <p class="text-danger">@ViewBag.Error</p>
+    <p>@ViewBag.First @ViewBag.Operation @ViewBag.Second</p>
+}
+else if (ViewBag.Operation != null)
+{
+    <p>@ViewBag.First @ViewBag.Operation @ViewBag.Second = @ViewBag.Result</p>
+}
+else if (ViewData["Error"] != null)
+{
+    <p class="text-danger">@ViewData["Error"]</p>
+}
+else
+{
+    <p>@ViewData["Result"]</p>
+}
